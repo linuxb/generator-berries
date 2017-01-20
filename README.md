@@ -1,4 +1,4 @@
-# generator-berries [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-berries [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
 > 
 
 ## Installation
