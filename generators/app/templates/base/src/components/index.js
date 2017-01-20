@@ -1,1 +1,1 @@
-let handle = <%= handle %>
+// let handle = 0;

@@ -10,8 +10,8 @@ var plumber = require('gulp-plumber');
 var coveralls = require('gulp-coveralls');
 const isparta = require('isparta');
 
-var paths = {
-  scripts: '!(generators/app/templates/**/*.js)'
+const paths = {
+  scripts: 'generators/app/gen/**/*.js'
 };
 
 gulp.task('static', function () {
