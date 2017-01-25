@@ -1,6 +1,6 @@
 {
   "name": "generator-berries",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "homepage": "",
   "author": {
@@ -50,7 +50,7 @@
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "NODE_ENV=dev gulp",
-    "clean": "rm -rf ../fake-yo-dir/reol/*"
+    "clean": "rm -rf ../fake-yo-dir/*"
   },
   "license": "MIT"
 }

@@ -14,7 +14,7 @@ module.exports = class extends Generator {
 
 	// in run loop, this method runs after the 'write' method in main generator
   writing() {
-    const targetPath = path.join(this.destinationPath('.'), this.options.name);
+    const targetPath = path.join(this.destinationPath('.'), '.');
     this.fs.copy(
       this.templatePath('.'),
       targetPath

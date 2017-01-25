@@ -84,7 +84,7 @@ module.exports = Generator.extend({
   },
 
   writing: function () {
-    const targetPath = path.join(this.destinationPath('.'), `${this.props.name}`);
+    const targetPath = path.join(this.destinationPath('.'), `.`);
     //if you have no package.json yet, it will return {}
     let pkg = this.fs.readJSON(this.destinationPath('package.json'), {});
     let genPkg = require(this.templatePath('extra/package.json'));

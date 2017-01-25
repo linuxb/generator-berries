@@ -19,17 +19,17 @@ describe('generator-berries:app', () => {
 
   it('creates files', () => {
     const expected = [
-      'reol/src/components/index.js',
-      'reol/webpack.conf.js',
-      'reol/index.js',
-      'reol/package.json',
-      'reol/README.md'
+      'src/components/index.js',
+      'webpack.conf.js',
+      'index.js',
+      'package.json',
+      'README.md'
     ];
     assert.file(expected);
   });
 
   it('populate package.json with correct infomation', () => {
-    assert.JSONFileContent('reol/package.json', {
+    assert.JSONFileContent('package.json', {
       name: 'reol',
       dependencies: {
         react: '^15.4.2',
@@ -55,9 +55,9 @@ describe('generator-berries:app', () => {
   });
 
   it('populate README.md with correct data', () => {
-    assert.fileContent('reol/README.md', '# reol');
-    assert.fileContent('reol/README.md', 'My first Web App');
-    assert.fileContent('reol/README.md', 'MIT');
-    assert.fileContent('reol/README.md', 'linuxb');
+    assert.fileContent('README.md', '# reol');
+    assert.fileContent('README.md', 'My first Web App');
+    assert.fileContent('README.md', 'MIT');
+    assert.fileContent('README.md', 'linuxb');
   });
 });
