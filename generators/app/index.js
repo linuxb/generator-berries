@@ -105,7 +105,7 @@ module.exports = Generator.extend({
         'webpack-dev-server': genPkg.devDependencies['webpack-dev-server'],
         istanbul: genPkg.devDependencies.istanbul,
         isparta: genPkg.devDependencies.isparta,
-        'babel-node': genPkg.devDependencies['babel-node'],
+        'babel-cli': genPkg.devDependencies['babel-cli'],
         'babel-core': genPkg.devDependencies['babel-core'],
         'babel-register': genPkg.devDependencies['babel-register'],
         'babel-polyfill': genPkg.devDependencies['babel-polyfill'],

@@ -43,7 +43,7 @@ describe('generator-berries:app', () => {
         mocha: '^3.2.0',
         istanbul: '^0.4.5',
         isparta: '^4.0.0',
-        'babel-node': '^6.5.2',
+        'babel-cli': '^6.22.2',
         'babel-core': '^6.22.0',
         'babel-register': '^6.22.0',
         'babel-polyfill': '^6.22.0',
