@@ -14,11 +14,17 @@ const paths = {
   scripts: [
     'generators/app/index.js',
     'generators/subgen/index.js'
+  ],
+  static: [
+    'generators/app/index.js',
+    'generators/subgen/index.js',
+    'test/**/*.js',
+    './*.js'
   ]
 };
 
 gulp.task('static', () => {
-  return gulp.src('**/*.js')
+  return gulp.src(paths.static)
     .pipe(excludeGitignore())
     .pipe(eslint())
     .pipe(eslint.format())

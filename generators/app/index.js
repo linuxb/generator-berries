@@ -93,24 +93,43 @@ module.exports = Generator.extend({
       license: this.props.license,
       description: this.props.description,
       author: this.props.author,
+      scripts: genPkg.scripts,
       dependencies: {
         react: genPkg.dependencies.react,
+        'react-dom': genPkg.dependencies['react-dom'],
         redux: genPkg.dependencies.redux,
         'react-redux': genPkg.dependencies['react-redux'],
-        'react-router': genPkg.dependencies['react-router']
+        'react-router': genPkg.dependencies['react-router'],
+        express: genPkg.dependencies.express,
+        'babel-polyfill': genPkg.dependencies['babel-polyfill'],
+        'babel-register': genPkg.dependencies['babel-register'],
+        webpack: genPkg.dependencies.webpack,
+        'webpack-dev-server': genPkg.dependencies['webpack-dev-server']
+
       },
       devDependencies: {
-        webpack: genPkg.devDependencies.webpack,
         mocha: genPkg.devDependencies.mocha,
-        'webpack-dev-server': genPkg.devDependencies['webpack-dev-server'],
         istanbul: genPkg.devDependencies.istanbul,
         isparta: genPkg.devDependencies.isparta,
         'babel-cli': genPkg.devDependencies['babel-cli'],
         'babel-core': genPkg.devDependencies['babel-core'],
-        'babel-register': genPkg.devDependencies['babel-register'],
-        'babel-polyfill': genPkg.devDependencies['babel-polyfill'],
+        'babel-loader': genPkg.devDependencies['babel-loader'],
         'babel-plugin-react-transform': genPkg.devDependencies['babel-plugin-react-transform'],
-        'babel-plugin-transform-async-to-generator': genPkg.devDependencies['babel-plugin-transform-async-to-generator']
+        'babel-plugin-transform-async-to-generator': genPkg.devDependencies['babel-plugin-transform-async-to-generator'],
+        'babel-plugin-transform-react-jsx': genPkg.devDependencies['babel-plugin-transform-react-jsx'],
+        'babel-preset-react': genPkg.devDependencies['babel-preset-react'],
+        'babel-eslint': genPkg.devDependencies['babel-eslint'],
+        'css-loader': genPkg.devDependencies['css-loader'],
+        'babel-preset-es2015': genPkg.devDependencies['babel-preset-es2015'],
+        eslint: genPkg.devDependencies.eslint,
+        'eslint-config-airbnb': genPkg.devDependencies['eslint-config-airbnb'],
+        'eslint-loader': genPkg.devDependencies['eslint-loader'],
+        'eslint-plugin-import': genPkg.devDependencies['eslint-plugin-import'],
+        'eslint-plugin-jsx-a11y': genPkg.devDependencies['eslint-plugin-jsx-a11y'],
+        'eslint-plugin-react': genPkg.devDependencies['eslint-plugin-react'],
+        'style-loader': genPkg.devDependencies['style-loader'],
+        'webpack-hot-middleware': genPkg.devDependencies['webpack-hot-middleware'],
+        'pm2': genPkg.devDependencies['pm2']
       }
     });
     pkg.keywords = pkg.keywords || [];
